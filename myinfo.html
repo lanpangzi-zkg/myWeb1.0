@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>张克贵</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no maximum-scale=1.0 minimun-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style/normalize.css">
+   <link rel="stylesheet" type="text/css" href="style/myinfo.css">
+   <link rel="stylesheet" type="text/css" href="style/anim.css">
+   <link rel="stylesheet" type="text/css" href="style/mobile.css">
+   <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+   <script type="text/javascript" src="js/my.js"></script>
+   <script type="text/javascript" src="js/basic.js"></script>
+   <script type="text/javascript" src="js/prefixfree.min.js"></script>
+   <script type="text/javascript">
+       var deviceWidth=document.documentElement.clientWidth;
+       if(deviceWidth>640){
+          deviceWidth=640;
+       }
+       document.documentElement.style.fontSize=deviceWidth/6.4+"px";
+   </script>
+ </head>
+ <body>
+    <div class="wrapper">
+       <div class="loading">
+          <div class="photo"></div>
+          <div class="dots">
+              <ul>
+              	<li class="li_dot_b"><span class="dot1"></span></li>
+              	<li class="li_dot_r"><span class="dot2"></span></li>
+              	<li class="li_dot_y"><span class="dot3"></span></li>
+              	<li class="li_dot_g"><span class="dot4"></span></li>
+              </ul>
+          </div> 
+       </div>
+       <div class="main-container">
+            <div class="header">
+               <div class="top-logo">
+                   <img src="image/top.png">
+               </div>
+               <ul class="nav clearfix">
+                 <li><a href="javascript:void(0)" id="page4" class="menu" data-icon="W">联系</a><!--联系-->
+                </li>
+                 <li><a href="javascript:void(0)" id="page3" class="menu" data-icon="Z">经历</a><!--经历-->
+                  <span class="dividing"></span>
+                </li>
+                 <li><a href="javascript:void(0)" id="page2" class="menu" data-icon="A">个人</a><!--基本信息-->
+                  <span class="dividing"></span>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" id="page1" class="menu active" data-icon="H">首页</a><!--首页-->
+                  <span class="dividing"></span>
+                </li>                 
+              </ul>
+            </div>
+            <div class="content">
+                <!--page1-->
+                <div class="page-panel page1 show">
+                    <div class="top-corner">zkg</div>
+                    <div class="content-l">
+                         <div class="index-cirle cirle"></div>
+                         <div class="s-cirle s-cirle-1 cirle">0101</div>
+                         <div class="s-cirle s-cirle-2 cirle">404</div>
+                         <div class="s-cirle s-cirle-3 cirle">bug</div>
+                         <div class="s-cirle s-cirle-4 cirle">object</div>
+                         <div class="line line1">
+                           <p class="text">程序猿</p>
+                         </div>
+                         <div class="line line2">
+                           <p class="text">鼠标键盘</p>
+                         </div>
+                         <div class="line line3">
+                          <p class="text">编码</p>
+                         </div>
+                     </div>
+                     <div class="content-r">
+                          <div class="tips">欢迎</div>
+                          <div class="face" data-icon="y"></div> 
+                          <div class="talk" data-icon="b">
+                              <p>假如生活欺骗了你，</p>
+                              <p>不要悲伤不要心急。</p>
+                              <p>《代码大全》会一直陪伴着你</p>                                                      
+                          </div>
+                     </div>
+                     <div class="word word1">hello world</div>
+                </div> 
+                <!--page2-->
+                <div class="page-panel page2 hide">
+                     <div class="piano piano-wr">a</div>
+                     <div class="piano piano-wl">b</div>
+                      <div class="piano">c</div>
+                    <div class="piano piano-wr">d</div>
+                     <div class="piano piano-wl">e</div>
+                     <div class="piano piano-wr">g</div>
+                     <div class="piano piano-wl">h</div>
+                     <div class="piano">i</div>
+                     <div class="piano piano-wr">j</div>
+                     <div class="piano piano-wl">l</div>
+                     <div class="piano piano-wr">m</div>
+                     <div class="piano piano-wl">n</div>
+                     <div class="piano">o</div>
+                     <div class="piano piano-wr">r</div>
+                     <div class="piano piano-wl">s</div>
+                     <div class="piano">t</div>
+                     <div class="music-bottom">
+                        <p class="xianpu">
+                            <span class="yinfu">n</span>
+                            <span class="yinfu">q</span>
+                            <span class="yinfu">z</span>
+                            <span class="yinfu">n</span>
+                            <span class="yinfu">r</span>
+                            <span class="yinfu">y</span>
+                            <span class="yinfu">n</span>
+                            <span class="yinfu">s</span>
+                         </p>
+                                                             
+                     </div>
+                     <div class="music-answer hide" id="music_answer"></div>
+                     <div class="huanhu hide" id="huanhu"></div>      
+                </div>
+                <!--page3-->
+                <div class="page-panel page3 hide">
+                    <div class="page3-main">
+                      <div class="panel-bubble">
+                          <div class="bubble bubble1" data-tag="bubble-info-1">
+                            <div class="bubble-top">
+                              </br>
+                              what</br>can</br>i</br>do
+                            </div>
+                            <div class="bubble-tottom"></div>
+                          </div>
+                          <div class="bubble bubble2" data-tag="bubble-info-2">
+                            <div class="bubble-top">
+                              </br>
+                              what</br>did</br>i</br>do
+                            </div>
+                            <div class="bubble-tottom"></div>
+                          </div>
+                          <div class="bubble bubble3" data-tag="bubble-info-3">
+                            <div class="bubble-top">
+                              </br>
+                              what</br>do</br>i</br>want</br>to</br>do
+                            </div>
+                            <div class="bubble-tottom"></div>
+                          </div>
+                      </div>
+                      <div class="book">
+                        <div class="left-l"></div>
+                        <div class="left-r"></div>
+                      </div>
+                    </div>  
+                    <div class="bubble-info bubble-info-1 hide">
+                         <div class="close">X</div>
+                         <div class="bubble-info-content">
+                           <div class="html item tag">html</div>
+                           <div class="item item-o">
+                             <div class="javascript tag">js</div>
+                             <div class="css tag">css</div>
+                           </div>
+                           <div class="android item tag">android</div>
+                         </div>
+                    </div>
+                    <div class="bubble-info bubble-info-2 hide">
+                          <div class="close">X</div>
+                          <div class="bubble-info-content">
+                            <div class="project-item">
+                                <div class="title">荆州电子政务服务一体化平台</div>
+                                <div class="project-i">
+                                     <a href="javascript:void(0)" onclick="alert('没有的，你放弃吧')">全文</a>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="title">黄冈网上办事服务平台</div>
+                                <div class="project-i">
+                                     此处省略1000字......
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="title">湖北省三支一扶信息管理系统</div>
+                                <div class="project-i">
+                                    能不能给我一首歌的时间，容我想想
+                                </div>
+                            </div>
+                          </div>  
+                    </div>
+                    <div class="bubble-info bubble-info-3 hide">
+                          <div class="close">X</div>
+                          <div class="bubble-info-content">
+                            <div class="target html">html5</div>
+                            <div class="target net">移动互联网</div>
+                            <div class="target android-do">android</div>
+                          </div> 
+                    </div>
+                </div>
+                <!--page4-->
+                <div class="page-panel page4 hide">
+                    <div class="wantyou">
+                        <div class="ep contact" id="phone">
+                          <p>正常版</p>
+                          <div class="see">
+                            <a href="download/resume-normal.docx">下载</a>
+                         </div>
+                       </div>
+                       <div class="resume contact" id="resume">
+                          <p>淘宝版</p>
+                          <div class="see">
+                            <a href="download/taobao-resume.pdf">下载</a>
+                        </div>
+                       </div>
+                       <div class="app contact" id="app">
+                          <p>安卓版</p>
+                          <div class="see">
+                            <a href="download/MyApp.apk">下载</a> 
+                          </div>
+                      </div>
+                    </div>
+                    <div class="wantyou-tip wantyou-h">
+                        <h1>I WANT YOU!</h1>
+                    </div>
+                    <div class="want-button wantyou-h" id="want">YES</div>
+                </div>
+               </div>              
+               <div id="click-effect-mask" class="click-effect"></div>    
+         </div>
+         <!--end of content-->
+    </div>
+    <!--end of main-container-->
+ </body>
+ <script type="text/javascript">
+    $(document).ready(function(){
+         if(!!window.ActiveXObject || "ActiveXObject" in window){ 
+           $("#wrapper").remove();
+           document.write("<h1>不要用IE，说了不要用</h1>");
+         } 
+         else{
+          my.init();
+         }        
+     });
+ </script>
+</html>
