@@ -1,6 +1,6 @@
 var basic={
 	name:"张克贵",
-    age:"26",
+    age:"27",
     school:"华中师范大学",
     address:"重庆万州", 
     major:"数字媒体技术",
